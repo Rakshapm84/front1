@@ -8,6 +8,18 @@
   ],
   "routes": [
     {
+      "src": "/(.*\\.(?:png|jpg|jpeg|gif|svg|webp|ico))",
+      "dest": "/src/$1"
+    },
+    {
+      "src": "/(.*\\.(?:css|js))",
+      "dest": "/src/$1"
+    },
+    {
+      "src": "^/$",
+      "dest": "/src/boot1.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/src/boot1.html"
     }
